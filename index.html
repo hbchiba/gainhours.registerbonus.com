@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon.png"
+    />
+    <title>GainHours</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./assets/css/style.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: block; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div
+      class="backdrop-brightness-50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full grid place-items-center h-screen"
+    >
+      <div class="relative w-full max-w-md h-full md:h-auto">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <div class="p-6 text-center">
+            <h3
+              class="mb-5 text-lg font-normal text-blue-500 dark:text-blue-400"
+            >
+              CONGRATULATIONS!
+            </h3>
+            <p class="mb-5">Register Now to get $5 Bonus</p>
+            <button
+              onclick="redirect()"
+              data-modal-toggle="popup-modal"
+              type="button"
+              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-wrapper">
+      <div class="page-wrapper">
+        <section id="feature1" class="feature1 spacer p-t-0">
+          <header class="topbar">
+            <div class="container">
+              <div class="header p-t-20">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                  <a class="navbar-brand" href="/">
+                    <img
+                      src="./assets/img/logo-light.png"
+                      alt="logo"
+                      class="logo"
+                      style="max-width: 220px"
+                    />
+                  </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://gainhours.com/cust/page/about"
+                          >About us</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://gainhours.com/cust/page/investment"
+                          >Investment plans</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://gainhours.com/paidout"
+                          >Paidout</a
+                        >
+                      </li>
+
+                      <li class="nav-item" style="padding-right: 15px">
+                        <a class="nav-link" href="https://gainhours.com/faq"
+                          >FAQ</a
+                        >
+                      </li>
+
+                      <li class="nav-item" style="padding-right: 15px">
+                        <a class="nav-link" href="https://gainhours.com/support"
+                          >Support</a
+                        >
+                      </li>
+
+                      <li class="nav-item" style="margin-top: 5px">
+                        <a
+                          href="https://gainhours.com/login"
+                          class="btn btn-info2"
+                          style="
+                            width: 100%;
+                            padding: 10px 30px;
+                            margin-top: 5px;
+                          "
+                          >Login</a
+                        >
+                      </li>
+
+                      <li class="nav-item p-l-15" style="margin-top: 5px">
+                        <a
+                          href="https://gainhours.com/signup"
+                          class="btn btn-info2"
+                          style="padding: 10px 30px; margin-top: 5px"
+                          >Registration</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="text-white" data-aos="fade">
+                  <p
+                    class="text-white m-t-40"
+                    style="font-size: 52px; text-align: center"
+                  >
+                    GainHours is a Bitcoin mining<br />and cryptocurrency
+                    investing company.
+                  </p>
+
+                  <p
+                    class="text-white m-t-40"
+                    style="
+                      font-size: 26px;
+                      text-align: center;
+                      font-weight: 400;
+                    "
+                  >
+                    We provide a stable passive income profit on an hourly
+                    basis.<br />
+                    All you have to do is invest in your account and get paid
+                    every hour.
+                  </p>
+                </h1>
+                <center data-aos="fade" data-aos-delay="0">
+                  <a
+                    href="https://gainhours.com/login"
+                    class="btn m-t-40 m-b-40 button2"
+                    style="font-size: 22px; border-radius: 15px"
+                    >Members login</a
+                  >&nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="https://gainhours.com/signup"
+                    class="btn m-t-40 m-b-40 button2"
+                    style="font-size: 22px; border-radius: 15px"
+                    >Registration</a
+                  >
+                </center>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px">
+              <div
+                class="col-md-3 m-t-20"
+                style="text-align: center"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                <div
+                  style="
+                    background: rgba(35, 87, 75, 0.5);
+                    padding: 25px 0px;
+                    border-radius: 15px;
+                  "
+                >
+                  <img src="./assets/img/stat1.png" style="width: 200px" />
+                  <p class="text-white m-t-30" style="font-size: 24px">
+                    Days online
+                  </p>
+                  <h3 class="text-white op-5 m-t-0" style="font-size: 26px">
+                    37 days
+                  </h3>
+                </div>
+              </div>
+
+              <div
+                class="col-md-3 m-t-20"
+                style="text-align: center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div
+                  style="
+                    background: rgba(35, 87, 75, 0.5);
+                    padding: 25px 0px;
+                    border-radius: 15px;
+                  "
+                >
+                  <img src="./assets/img/stat2.png" style="width: 200px" />
+                  <p class="text-white m-t-30" style="font-size: 24px">
+                    Members
+                  </p>
+                  <h3 class="text-white op-5" style="font-size: 26px">9698</h3>
+                </div>
+              </div>
+
+              <div
+                class="col-md-3 m-t-20"
+                style="text-align: center"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <div
+                  style="
+                    background: rgba(35, 87, 75, 0.5);
+                    padding: 25px 0px;
+                    border-radius: 15px;
+                  "
+                >
+                  <img src="./assets/img/stat3.png" style="width: 200px" />
+                  <p class="text-white m-t-30" style="font-size: 24px">
+                    Total deposit
+                  </p>
+                  <h3 class="text-white op-5" style="font-size: 26px">
+                    $1515796.17
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="col-md-3 m-t-20"
+                style="text-align: center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div
+                  style="
+                    background: rgba(35, 87, 75, 0.5);
+                    padding: 25px 0px;
+                    border-radius: 15px;
+                  "
+                >
+                  <img src="./assets/img/stat4.png" style="width: 200px" />
+                  <p class="text-white m-t-30" style="font-size: 24px">
+                    Total withdraw
+                  </p>
+                  <h3 class="text-white op-5" style="font-size: 26px">
+                    $449503.32
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      function redirect() {
+        window.location.href = 'https://gainhours.com/partner/official';
+      }
+
+      AOS.init({
+        offset: 120,
+        delay: 0,
+        once: false,
+        mirror: true,
+      });
+    </script>
+  </body>
+</html>
