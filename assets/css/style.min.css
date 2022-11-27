@@ -11686,7 +11686,7 @@ html body .waves-notransition {
   -moz-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
 
-  background: url(.../assets//img/pl2.jpg) center no-repeat;
+  background: url(../img/pl2.jpg) center no-repeat;
   background-size: auto;
   background-size: cover;
 }
